@@ -1,5 +1,5 @@
 /* ref: http://freedesktop.org/software/fontconfig/fontconfig-user.html */
-static char *font = "tewi:pixelsize=10:antialias=true:autohint=true;";
+static char *font = "Fantasque Sans Mono:pixelsize=15:antialias=true:autohint=true;";
 
 /* exec precedence: -e arg, utmp option, SHELL env var, /etc/passwd shell */
 static char *shell = "\0";
@@ -54,7 +54,7 @@ static int alpha = 0xff;
 static unsigned int doubleclicktimeout = 300;
 static unsigned int tripleclicktimeout = 600;
 static char *utmp = NULL;
-static int borderpx = 30;
+static int borderpx = 5;
 static int bold_font = 0;
 static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 static unsigned int xfps = 120;
