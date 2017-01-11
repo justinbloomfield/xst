@@ -1,5 +1,5 @@
 /* ref: http://freedesktop.org/software/fontconfig/fontconfig-user.html */
-static char *font = "Fantasque Sans Mono:pixelsize=15:antialias=true:autohint=true;";
+static char *font = "yuki:pixelsize=9:antialias=true:autohint=true;";
 
 /* exec precedence: -e arg, utmp option, SHELL env var, /etc/passwd shell */
 static char *shell = "\0";
@@ -124,12 +124,12 @@ static Shortcut shortcuts[] = {
 	{ MODKEY|ShiftMask,     XK_Prior,       xzoom,          {.f = +1} },
 	{ MODKEY|ShiftMask,     XK_Next,        xzoom,          {.f = -1} },
 	{ MODKEY|ShiftMask,     XK_Home,        xzoomreset,     {.f =  0} },
-	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
+	{ MODKEY|ControlMask,   XK_V,     	selpaste,       {.i =  0} },
 	{ MODKEY|ShiftMask,     XK_Insert,      clippaste,      {.i =  0} },
 	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
 	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               'u',            externalpipe,   {.v = "xurls | eval dmenu $(dmenu_options) | xargs -r $BROWSER" } },
+	{ MODKEY,               'u',            externalpipe,   {.v = "xurls | eval rofi -dmenu | xargs -r $BROWSER" } },
 };
 
 
