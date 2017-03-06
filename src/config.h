@@ -1,5 +1,5 @@
 /* ref: http://freedesktop.org/software/fontconfig/fontconfig-user.html */
-static char *font = "yuki:pixelsize=9:antialias=true:autohint=true;";
+static char *font = "tewi:pixelsize=12:antialias=false:autohint=false;";
 
 /* exec precedence: -e arg, utmp option, SHELL env var, /etc/passwd shell */
 static char *shell = "\0";
@@ -57,8 +57,8 @@ static char *utmp = NULL;
 static int borderpx = 5;
 static int bold_font = 0;
 static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
-static unsigned int xfps = 120;
-static unsigned int actionfps = 30;
+static unsigned int xfps = 144;
+static unsigned int actionfps = 144;
 static char *termname = "st-256color";
 static char *colorname[] = {
 	"#1e1e1e",
@@ -129,7 +129,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
 	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               'u',            externalpipe,   {.v = "xurls | eval rofi -dmenu | xargs -r $BROWSER" } },
+	{ MODKEY,               'u',            externalpipe,   {.v = "xurls | eval rofi -dmenu | xargs -r firefox" } },
+//	{ MODKEY,		'i',		externalpipe,	{.v = ""} },
 };
 
 
