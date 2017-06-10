@@ -6,7 +6,7 @@ static unsigned int cols = 80;
 static unsigned int rows = 24;
 
 /* ref: http://freedesktop.org/software/fontconfig/fontconfig-user.html */
-static char *font = "tewi:pixelsize=12:antialias=false:autohint=false;";
+static char *font = "Overpass:pixelsize=10:antialias=false:autohint=false;";
 
 /* exec precedence: -e arg, utmp option, SHELL env var, /etc/passwd shell */
 static char *shell = "\0";
