@@ -186,7 +186,11 @@ st| simpleterm,
 	tsl=\E]0;,
 	xenl,
 	vpa=\E[%i%p1%dd,
-
+# Tmux unofficial extensions, see TERMINFO EXTENSIONS in tmux(1)
+	Se,
+	Ss,
+	Tc,
+	Ms=\E]52;%p1%s;%p2%s\007,
 
 st-256color| simpleterm with 256 colors,
 	use=st,
