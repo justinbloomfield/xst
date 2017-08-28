@@ -2,7 +2,7 @@
 
 #define histsize 2000
 
-static unsigned int cols = 80;
+static unsigned int cols = 40;
 static unsigned int rows = 24;
 
 /* ref: http://freedesktop.org/software/fontconfig/fontconfig-user.html */
@@ -55,7 +55,7 @@ static int alpha = 0xff;
 static unsigned int doubleclicktimeout = 300;
 static unsigned int tripleclicktimeout = 600;
 static char *utmp = NULL;
-static int borderpx = 5;
+static int borderpx = 20;
 static int bold_font = 0;
 static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 static unsigned int xfps = 144;
